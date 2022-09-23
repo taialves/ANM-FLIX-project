@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --h1: 6rem;
+    --h2:3.75rem;
+    --h3:3rem;
+    --h4: 2.125rem;
+    --h5:1.5rem;
+    --h6:1.25rem;
+    --subtitle-1:1rem;
+    --subtitle-1:0.875rem;
+    --body-1: 1rem; /* 16/24 */
+    --body-2: 0.875rem; /* 14/20 */
+    --buttom: 0.875rem; /* 14/16 */
+    --caption: 0.75rem; /* 12/16 */
+    --overline: 0.625rem; /* 10/16 */
+
+    /* -- Color Styles -- */
+    --surface:          #121212;
+    --surface-overlay-2:#292929;
+    --error:            #CF6679;
+    --background:       #121212;
+    --outline:          rgba(255, 255, 255, 0.12);
+    --surface-overlay:  rgba(255, 255, 255, 0.12);
+
+    /* On Surface */
+    --High-Emphasis:   rgba(255, 255, 255, 0.87);
+    --Medium-Emphasis: rgba(255, 255, 255, 0.6);
+    --Disabled:        rgba(255, 255, 255, 0.38);
+
+    /* On Primary */
+    --High-Emphasis:    rgba(0, 0, 0, 1);
+    --Medium-Emphasis:  rgba(0, 0, 0, 0.74);
+    --Disabled:         rgba(0, 0, 0, 0.38);
+
+    /* Elevation Overlay (usar na propriedade opacity com a cor #FFFFFF)   */
+    --dp-01: 5%; --dp-02: 7%; --dp-03: 8%; --dp-04: 9%;
+    --dp-06: 11%; --dp-08: 12%; --dp-12: 14%; --dp-16: 15%;
+    --dp-24: 16%;
+
+    /*Primary Color*/ /*Secondary Color*/
+    --_900:#F57F17; --_900:#B71C1C;
+    --_800:#F9A825; --_800:#C62828;
+    --_700:#FBC02D; --_700:#D32F2F;
+    --_600:#FDD835; --_600:#E53935;
+    --_500:#FFEB3B; --_500:#F44336;
+    --_400:#FFEE58; --_400:#EF5350;
+    --_300:#FFF176; --_300:#E57373;
+    --_200:#FFF59D; --_200:#EF9A9A;
+    --_100:#FFF9C4; --_100:#FFCDD2;
+    --_50: #FFFDE7; --_50: #FFEBEE;
+
+    /* States white overlay*/
+    --white-Hover:rgba(255, 255, 255, 0.04); 
+    --white-Focus: rgba(255, 255, 255, 0.12);
+    --white-Pressed:rgba(255, 255, 255, 0.1);
+    --white-Dragged:rgba(255, 255, 255, 0.12);
+    --white-Selected:rgba(255, 255, 255, 0.08);
+
+    /* States Primary overlay */
+    --Primary-Hover:   rgba(249, 168, 37, 0.04);
+    --Primary-Focused: rgba(249, 168, 37, 0.12);
+    --Primary-Pressed: rgba(249, 168, 37, 0.1);
+    --Primary-Dragged: rgba(249, 168, 37, 0.12);
+    --Primary-Selected:rgba(249, 168, 37, 0.08);
+    /* States Secondary overlay */
+    --Secondary-Hover:   rgba(211, 47, 47, 0.04);
+    --Secondary-Focused: rgba(211, 47, 47, 0.12);
+    --Secondary-Pressed: rgba(211, 47, 47, 0.12);
+
+    /* Box Shadows*/
+    --bs00: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --bs01: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --bs02:0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    --bs03:0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
+    --bs04: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    --bs06: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+    --bs08: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+    --bs12: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+    --bs16: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    --bs24: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+
+
+    --bs24: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+/* Surface Class*/
+.dp01, .dp02, .dp03, .dp04, .dp06, .dp08, .dp12, .dp16, .dp24{
+    background: #FFFFFF;
+}
+.dp01{opacity: 5%;}
+.dp02{opacity: 7%;}
+.dp03{opacity: 8%;}
+.dp04{opacity: 9%;}
+.dp06{opacity: 11%;}
+.dp08{opacity: 12%;}
+.dp012{opacity: 14%;}
+.dp016{opacity: 15%;}
+.dp024{opacity: 16%;}
