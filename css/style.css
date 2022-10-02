@@ -1,6 +1,92 @@
-/** FONTE  ROBOTO **/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --h1: 6rem;
+    --h2:3.75rem;
+    --h3:3rem;
+    --h4: 2.125rem;
+    --h5:1.5rem;
+    --h6:1.25rem;
+    --subtitle-1:1rem;
+    --subtitle-2:0.875rem;
+    --body-1: 1rem; /* 16/24 */
+    --body-2: 0.875rem; /* 14/20 */
+    --buttom: 0.875rem; /* 14/16 */
+    --caption: 0.75rem; /* 12/16 */
+    --overline: 0.625rem; /* 10/16 */
 
+    /* -- Color Styles -- */
+    --surface:          #121212;
+    --surface-overlay-2:#292929;
+    --error:            #CF6679;
+    --background:       #121212;
+    --outline:          rgba(255, 255, 255, 0.12);
+    --surface-overlay:  rgba(255, 255, 255, 0.12);
+
+    /* On Surface */
+    --os-High-Emphasis:   rgba(255, 255, 255, 0.87);
+    --os-Medium-Emphasis: rgba(255, 255, 255, 0.6);
+    --os-Disabled:        rgba(255, 255, 255, 0.38);
+
+    /* On Primary */
+    --op-High-Emphasis:    rgba(0, 0, 0, 1);
+    --op-Medium-Emphasis:  rgba(0, 0, 0, 0.74);
+    --op-Disabled:         rgba(0, 0, 0, 0.38);
+
+    /* Elevation Overlay (usar na propriedade opacity com a cor #FFFFFF)   */
+    --dp-01: #1E1E1E;
+    --dp-02: #232323; 
+    --dp-03: #252525; 
+    --dp-04: #272727;
+    --dp-06: #2C2C2C; 
+    --dp-08: #2E2E2E; 
+    --dp-12: #333333; 
+    --dp-16: #363636;
+    --dp-24: #383838;
+
+    /*Primary Color*/ /*Secondary Color*/
+    --p_900:#F57F17; --s_900:#B71C1C;
+    --p_800:#F9A825; --s_800:#C62828;
+    --p_700:#FBC02D; --s_700:#D32F2F;
+    --p_600:#FDD835; --s_600:#E53935;
+    --p_500:#FFEB3B; --s_500:#F44336;
+    --p_400:#FFEE58; --s_400:#EF5350;
+    --p_300:#FFF176; --s_300:#E57373;
+    --p_200:#FFF59D; --s_200:#EF9A9A;
+    --p_100:#FFF9C4; --s_100:#FFCDD2;
+    --p_50: #FFFDE7; --s_50: #FFEBEE;
+
+    /* States white overlay*/
+    --white-Hover:rgba(255, 255, 255, 0.04); 
+    --white-Focus: rgba(255, 255, 255, 0.12);
+    --white-Pressed:rgba(255, 255, 255, 0.1);
+    --white-Dragged:rgba(255, 255, 255, 0.12);
+    --white-Selected:rgba(255, 255, 255, 0.08);
+
+    /* States Primary overlay */
+    --Primary-Hover:   rgba(249, 168, 37, 0.04);
+    --Primary-Focused: rgba(249, 168, 37, 0.12);
+    --Primary-Pressed: rgba(249, 168, 37, 0.1);
+    --Primary-Dragged: rgba(249, 168, 37, 0.12);
+    --Primary-Selected:rgba(249, 168, 37, 0.08);
+    /* States Secondary overlay */
+    --Secondary-Hover:   rgba(211, 47, 47, 0.04);
+    --Secondary-Focused: rgba(211, 47, 47, 0.12);
+    --Secondary-Pressed: rgba(211, 47, 47, 0.12);
+
+    /* Box Shadows*/
+    --bs00: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --bs01: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --bs02:0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    --bs03:0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
+    --bs04: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    --bs06: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12), 0px 3px 5px rgba(0, 0, 0, 0.2);
+    --bs08: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+    --bs12: 0px 12px 17px rgba(0, 0, 0, 0.14), 0px 5px 22px rgba(0, 0, 0, 0.12), 0px 7px 8px rgba(0, 0, 0, 0.2);
+    --bs16: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    --bs24: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+    --bs24: 0px 24px 38px rgba(0, 0, 0, 0.14), 0px 9px 46px rgba(0, 0, 0, 0.12), 0px 11px 15px rgba(0, 0, 0, 0.2);
+}
 
 *{
     
@@ -12,17 +98,80 @@
     box-sizing: border-box;
 }
 
-body{
+/* Header */
+.nav{
+    width: 100%;
+    background-color: var(--surface);
     display: flex;
-    justify-content: center;
+    border: 1px solid red;
+    justify-content: space-between ;
+    height: 75px;
+    padding: 9px 47px 9px 27px;
+}
+.nav img{
+    height: 3.5625rem;
+}
+.navbar{
+    width: auto;
+    background: #191919;
+    display: flex;
+    padding: 9px 27px;
+    height: 3.5625rem; 
+    border-radius: 25px;
+}
+.navbar ul li a{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--subtitle-1);
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: var(--os-High-Emphasis);
+    transition: 0.2s;
+}
+.navbar ul li a:hover{
+    background: var(--p_900);
+    padding: 2px 4px;
+    border-radius: 10px;
+    color: var(--op-High-Emphasis);
+    box-shadow: var(--bs06);
+}
+.navbar ul{
+    margin-right: 2.5rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background: var(--surface-2);
-    height: 100vh;
+    gap: 2rem;
 }
-div{
-    width: 300px;
-    height: 80px;
-    background: var(--dp-06);
-    border-radius: 30%;
-    box-shadow: var(--bs24);
+.search-field{
+    border: 1px solid var(--p_800);
+    border-radius: 15px;
+    height: 37px;
+    width: 231px;
+    align-items: center ;
+    padding: 0 14px;
+    display: flex;
+    background: var(--background);
+    transition: 0.5s ease;
 }
+.search-field .lupa{
+    color: var(--p_800);
+}
+.hamburguer-menu{
+    display: none;
+}
+.search-field input{
+    padding-left: 5px;
+    background: none;
+    height: 100%;
+    width: auto;
+    font-size: var(--subtitle-1);
+    color: var(--os-High-Emphasis);
+    outline: none;
+    border: none;
+}
+
+
+
+
+
